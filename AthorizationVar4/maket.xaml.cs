@@ -16,14 +16,26 @@ using System.Windows.Shapes;
 namespace AthorizationVar4
 {
     /// <summary>
-    /// Логика взаимодействия для MainWindow.xaml
+    /// Логика взаимодействия для maket.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class maket : Page
     {
-        public MainWindow()
+        public maket()
         {
             InitializeComponent();
-            frame.Navigate(new LoginPage());
+            frame.NavigationService.Navigate(new MainPage());
+        }
+
+        private void GoMaster(object sender, RoutedEventArgs e)
+        {
+            frame.NavigationService.Navigate(new MainPage());
+
+        }
+
+        private void GoClient(object sender, RoutedEventArgs e)
+        {
+            frame.NavigationService.Navigate(new ClientPage());
+
         }
     }
 }

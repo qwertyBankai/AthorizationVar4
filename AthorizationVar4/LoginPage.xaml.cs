@@ -39,7 +39,7 @@ namespace AthorizationVar4
                 if (emp.password.Equals(inputPassword.Text))
                 {
                     MessageBox.Show("Добро пожаловать");
-                    NavigationService.Navigate(new MainPage());
+                    NavigationService.Navigate(new maket());
                 }
                 else
                 {

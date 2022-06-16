@@ -7,18 +7,6 @@
         mc:Ignorable="d"
         Title="Сказочная страна" Height="450" Width="800" Icon="C:\Users\c1own\Desktop\AthorizationVar4\AthorizationVar4\Resourse\logo.ico">
     <Grid Background="#009fda">
-       
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition />
-            <ColumnDefinition Width="2.5*" />
-        </Grid.ColumnDefinitions>
-        <StackPanel Grid.Column="0">
-            <Image Source="C:\Users\c1own\Desktop\AthorizationVar4\AthorizationVar4\Resourse\Logo.png" Height="100" Width="150"/>
-            <Button Content="Мастер" Width="150" Click="GoMaster" Margin="20"/>
-            <Button Content="Клиенты" Width="150" Click="GoClient" Margin="20"/>
-        </StackPanel>
-        <StackPanel Grid.Column="1">
             <Frame Name="frame" NavigationUIVisibility="Hidden"/> 
-        </StackPanel>
     </Grid>
 </Window>
