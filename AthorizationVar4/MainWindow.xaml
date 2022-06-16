@@ -1,0 +1,24 @@
+﻿<Window x:Class="AthorizationVar4.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:AthorizationVar4"
+        mc:Ignorable="d"
+        Title="Сказочная страна" Height="450" Width="800" Icon="C:\Users\c1own\Desktop\AthorizationVar4\AthorizationVar4\Resourse\logo.ico">
+    <Grid Background="#009fda">
+       
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition />
+            <ColumnDefinition Width="2.5*" />
+        </Grid.ColumnDefinitions>
+        <StackPanel Grid.Column="0">
+            <Image Source="C:\Users\c1own\Desktop\AthorizationVar4\AthorizationVar4\Resourse\Logo.png" Height="100" Width="150"/>
+            <Button Content="Мастер" Width="150" Click="GoMaster" Margin="20"/>
+            <Button Content="Клиенты" Width="150" Click="GoClient" Margin="20"/>
+        </StackPanel>
+        <StackPanel Grid.Column="1">
+            <Frame Name="frame" NavigationUIVisibility="Hidden"/> 
+        </StackPanel>
+    </Grid>
+</Window>
