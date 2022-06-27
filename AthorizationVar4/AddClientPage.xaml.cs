@@ -20,9 +20,9 @@ namespace AthorizationVar4
     /// </summary>
     public partial class AddClientPage : Page
     {
-        var4Entities context;
+        var4Entities1 context;
         Client c;
-        public AddClientPage(var4Entities cont, Client client)
+        public AddClientPage(var4Entities1 cont, Client client)
         {
             InitializeComponent();
             context = cont;

@@ -21,8 +21,8 @@ namespace AthorizationVar4
     public partial class AddMasterPage : Page
     {
         bool flag;
-        var4Entities context;
-        public AddMasterPage(var4Entities cont)
+        var4Entities1 context;
+        public AddMasterPage(var4Entities1 cont)
         {
             InitializeComponent();
             context = cont;
@@ -31,7 +31,7 @@ namespace AthorizationVar4
 
         Employer emp;
 
-        public AddMasterPage(var4Entities cont, Employer employer)
+        public AddMasterPage(var4Entities1 cont, Employer employer)
         {
             InitializeComponent();
             context = cont;

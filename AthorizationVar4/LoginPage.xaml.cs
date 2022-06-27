@@ -20,11 +20,11 @@ namespace AthorizationVar4
     /// </summary>
     public partial class LoginPage : Page
     {
-        var4Entities dataClasses2;
+        var4Entities1 dataClasses2;
         public LoginPage()
         {
             InitializeComponent();
-            dataClasses2 = new var4Entities();
+            dataClasses2 = new var4Entities1();
         }
         int count = 0;
         private void GoLogIn(object sender, RoutedEventArgs e)
@@ -39,7 +39,7 @@ namespace AthorizationVar4
                 if (emp.password.Equals(inputPassword.Text))
                 {
                     MessageBox.Show("Добро пожаловать");
-                    NavigationService.Navigate(new maket());
+                    NavigationService.Navigate(new maket(emp));
                 }
                 else
                 {

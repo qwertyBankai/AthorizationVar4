@@ -13,10 +13,10 @@ namespace AthorizationVar4
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
-    public partial class var4Entities : DbContext
+    public partial class var4Entities1 : DbContext
     {
-        public var4Entities()
-            : base("name=var4Entities")
+        public var4Entities1()
+            : base("name=var4Entities1")
         {
         }
     

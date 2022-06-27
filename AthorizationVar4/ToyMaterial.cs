@@ -17,7 +17,9 @@ namespace AthorizationVar4
         public int idToy { get; set; }
         public int idMaterial { get; set; }
         public int count { get; set; }
-    
+
+        public string TakeNameMat { get => Material.title; }
+
         public virtual Material Material { get; set; }
         public virtual Toy Toy { get; set; }
     }

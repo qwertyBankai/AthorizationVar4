@@ -22,9 +22,7 @@ namespace AthorizationVar4
         public string password { get; set; }
         public Nullable<int> State { get; set; }
 
-        public string TitleState { get=> State1.title; }
-
-
+    
         public virtual Employer Employer1 { get; set; }
         public virtual Employer Employer2 { get; set; }
         public virtual Position Position1 { get; set; }

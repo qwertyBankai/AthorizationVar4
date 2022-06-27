@@ -15,8 +15,13 @@
         </Grid.ColumnDefinitions>
         <StackPanel Grid.Column="0">
             <Image Source="C:\Users\c1own\Desktop\AthorizationVar4\AthorizationVar4\Resourse\Logo.png" Height="100" Width="150"/>
-            <Button Content="Мастер" Width="150" Click="GoMaster" Margin="20"/>
-            <Button Content="Клиенты" Width="150" Click="GoClient" Margin="20"/>
+            <Button Name="master" Content="Мастер" Width="150" Click="GoMaster" Margin="20"/>
+            <Button Name="Client" Content="Клиенты" Width="150" Click="GoClient" Margin="20"/>
+            <Button Name="Catalog" Content="Каталог игрушек" Width="150" Click="GoListToys" Margin="20"/>
+            <Button Name="Order" Content="Заказы" Width="150" Click="GoOrder" Margin="20"/>
+            <Button Name="Mat" Content="Материалы" Width="150" Click="GoMaterial" Margin="20"/>
+            <Button Name="za" Content="Заявка" Width="150" Click="GoFormCreateToy" Margin="20"/>
+            <Button Content="Форма выполнения" Width="150" Click="GoFormMaster" Margin="20"/>
         </StackPanel>
         <StackPanel Grid.Column="1">
             <Frame Name="frame" NavigationUIVisibility="Hidden"/>

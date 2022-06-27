@@ -20,11 +20,11 @@ namespace AthorizationVar4
     /// </summary>
     public partial class CheckPasswordPage : Page
     {
-        var4Entities dataClasses2;
+        var4Entities1 dataClasses2;
         public CheckPasswordPage()
         {
             InitializeComponent();
-            dataClasses2 = new var4Entities();
+            dataClasses2 = new var4Entities1();
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)

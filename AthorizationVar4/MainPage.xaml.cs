@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -20,13 +21,14 @@ namespace AthorizationVar4
     /// </summary>
     public partial class MainPage : Page
     {
-        var4Entities context;
+        var4Entities1 context;
         public MainPage()
         {
             InitializeComponent();
-            context = new var4Entities();
+            context = new var4Entities1();
             masterTable.ItemsSource = context.Employer.ToList();
             StatusCombo.ItemsSource = context.State.ToList();
+           // DownloadPict();
         }
 
         public void SortDataEmp()
@@ -44,9 +46,17 @@ namespace AthorizationVar4
                 list =list.Where(x => x.name.ToLower().Contains(fioBox.Text.ToLower())).ToList();
             }
             masterTable.ItemsSource = list;
-
-
         }
+
+        public void DownloadPict()
+        {
+            foreach (var item in context.Toy.ToList())
+            {
+                item.image = File.ReadAllBytes(@"C:\Users\c1own\Desktop\AthorizationVar4\AthorizationVar4\Resourse\logo.png");
+            }
+            context.SaveChanges();
+        }
+
 
         private void SelectStatus(object sender, SelectionChangedEventArgs e)
         {

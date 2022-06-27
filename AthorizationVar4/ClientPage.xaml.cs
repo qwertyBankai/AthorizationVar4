@@ -20,11 +20,11 @@ namespace AthorizationVar4
     /// </summary>
     public partial class ClientPage : Page
     {
-        var4Entities context;
+        var4Entities1 context;
         public ClientPage()
         {
             InitializeComponent();
-            context = new var4Entities();
+            context = new var4Entities1();
             clientTable.ItemsSource = context.Client.ToList();
         }
 

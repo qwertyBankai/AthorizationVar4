@@ -20,9 +20,17 @@ namespace AthorizationVar4
     /// </summary>
     public partial class maket : Page
     {
-        public maket()
+        public maket(Employer employer)
         {
             InitializeComponent();
+
+            if(employer.position == 2)
+            {
+                Client.Visibility = Visibility.Hidden;
+                Catalog.Visibility = Visibility.Hidden;
+                Order.Visibility = Visibility.Hidden;
+                za.Visibility = Visibility.Hidden;
+            }
             frame.NavigationService.Navigate(new MainPage());
         }
 
@@ -36,6 +44,31 @@ namespace AthorizationVar4
         {
             frame.NavigationService.Navigate(new ClientPage());
 
+        }
+
+        private void GoListToys(object sender, RoutedEventArgs e)
+        {
+            frame.NavigationService.Navigate(new ListToys());
+        }
+
+        private void GoOrder(object sender, RoutedEventArgs e)
+        {
+            frame.NavigationService.Navigate(new OrderPage());
+        }
+
+        private void GoMaterial(object sender, RoutedEventArgs e)
+        {
+            frame.NavigationService.Navigate(new MaterialPage());
+        }
+
+        private void GoFormCreateToy(object sender, RoutedEventArgs e)
+        {
+            frame.NavigationService.Navigate(new FormCreateToy());
+        }
+
+        private void GoFormMaster(object sender, RoutedEventArgs e)
+        {
+            frame.NavigationService.Navigate(new MasterFormPage());
         }
     }
 }
